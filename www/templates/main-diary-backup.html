@@ -11,8 +11,8 @@
         </button>
      </div>
    </div> 
-  <ion-content class="has-subheader">
-      <div class="col bg-color">
+  <ion-content class="has-subheader" style="background-color: #eeeeee;">
+<!--       <div class="col bg-color">
           <div class="row">
               <nvd3-pie-chart
                   class="col"
@@ -33,11 +33,12 @@
                       </ion-item>
               </div>
           </div>
-      </div>
+      </div> -->
       <ion-list>
+      
           <ion-item collection-repeat="trip in data.currDayTrips"
-              item-width=100% item-height="100 + trip.sections.length * 40 + 300"
-              class="no-margin bg-color">
+              item-width=100% 
+              class="no-margin bg-color item-stable">
               <!--
             <div class="buttons summary-color">
               <button class="button button-icon icon ion-ios-minus-outline"
@@ -90,6 +91,7 @@
                   </div>
               </div>
           </ion-item>
+          
         </ion-list>
   </ion-content>
 </ion-view>
